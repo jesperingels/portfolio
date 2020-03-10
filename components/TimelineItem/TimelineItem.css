@@ -1,0 +1,121 @@
+.timeline-section {
+    display: flex;
+    overflow: hidden;
+    border-bottom: solid black 1px;
+}
+
+.timeline-section:hover .item-title img, .timeline-section:hover .item-text {
+    filter: blur(0);
+}
+
+.timeline-section:hover .hider {
+    transform: scale(0, 1);
+}
+
+/* section:hover .item-title img {
+    filter: blur(0);
+} */
+
+.item-title {
+    flex: 1 1 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4C5454
+}
+
+.item-title:hover img {
+    filter: blur(0);
+}
+
+.item-title h2 {
+    position: absolute;
+    color: white;
+    z-index: 10;
+}
+
+.item-title img {
+    object-fit: cover;
+    min-height: 300px;
+    max-height: 400px;
+    width: 100%;
+    filter: blur(5px);
+    transition: 0.5s;
+}
+
+.item-title:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #2e2b2f;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.item-text {
+    flex: 1 1 0px;
+    padding: 0 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* filter: blur(5px);
+    transition: 0.5s; */
+}
+
+.section-button {
+    color: #EBEBEB;
+    padding: 8px 15px;
+    background-color: #6369D1;
+    border-radius: 50px;
+}
+
+.hider {
+    position: absolute;
+    background: #2E2C2F;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    transform-origin: right;
+}
+
+.hider:after {
+    content: '';
+    display: block;
+    background-image: url(/img/arrow-white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+}
+
+@media screen and (max-width:976px) {
+    .timeline-section {
+        flex-direction: column;
+    }
+
+    .item-text {
+        padding-bottom: 50px;
+    }
+
+    .hider {
+        display: none;
+    }
+}
+
+@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0) and (max-width:976px)  {
+    .item-text {
+        flex: unset;
+    }
+
+    .item-title {
+        flex:unset;
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predev": "node tasks/imgmin.js",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "prod": "next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesperingels/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesperingels/portfolio/issues"
+  },
+  "homepage": "https://github.com/jesperingels/portfolio#readme",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "imagemin": "^7.0.1",
+    "imagemin-gifsicle": "^6.0.1",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "next": "^9.1.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
