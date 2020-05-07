@@ -12,6 +12,10 @@ const Cssttr = () => (
       feature in de website die iets doet met het batterij niveau en met het
       weer.
     </p>
+
+    <a href="https://github.com/jesperingels/css-to-the-rescue-1819">
+      Github repository
+    </a>
     <a href="https://jesperingels.github.io/css-to-the-rescue-1819/assignment/index.html">
       <div className="img-wrapper">
         <div className="img-placeholder width-100pr"></div>

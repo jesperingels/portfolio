@@ -97,3 +97,9 @@ iframe {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width:768px) {
+    .img-padding {
+        padding: unset;
+    }
+}

@@ -49,6 +49,7 @@ iframe {
     /* padding: 25px 0; */
     object-fit: contain;
     transition: 300ms;
+    height: 100%;
 }
 
 .img-wrapper img.social:hover {

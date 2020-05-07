@@ -13,6 +13,9 @@ const WebDesign = () => (
       Maak een prototype waardoor de doelgroep (Larissa) door een website kan
       navigeren. Belangrijk detail, Larissa is blind.
     </p>
+    <a href="https://github.com/jesperingels/web-design-1819">
+      Github repository
+    </a>
     <a href="https://jesper-webdesign-hover.herokuapp.com/">
       <div className="img-wrapper">
         <div className="img-placeholder width-100pr"></div>
