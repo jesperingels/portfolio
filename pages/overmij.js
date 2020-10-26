@@ -10,11 +10,7 @@ const OverMij = () => (
     </p>
     <div className="img-wrapper">
       <div className="img-placeholder width-80pr"></div>
-      <img
-        alt="Foto van jesper"
-        className="width-80pr"
-        src="/img/jesperingels.jpg"
-      />
+      <img alt="Foto van jesper" className="width-80pr" src="/img/jesper.jpg" />
     </div>
     <p>
       Sinds februari 2020 ben ik afgestudeerd aan de opleiding: Communication &

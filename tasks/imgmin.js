@@ -7,12 +7,12 @@ const imageminGifsicle = require("imagemin-gifsicle");
   const files = await imagemin(["public/img-in/*.{jpg,png,jpeg,gif,svg}"], {
     destination: "public/img",
     plugins: [
-      imageminMozjpeg({ quality: 30 }),
+      imageminMozjpeg({ quality: 50 }),
       imageminGifsicle(),
       imageminPngquant({
-        quality: [0.4, 0.5]
-      })
-    ]
+        quality: [0.5, 0.6],
+      }),
+    ],
   });
 
   console.log("Images optimized!");
