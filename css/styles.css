@@ -1,0 +1,28 @@
+@import "fonts.css";
+@import "typography.css";
+
+:root {
+  --bs-body-font-family: 'Open Sans';
+}
+
+.intro-wrapper {
+  grid-template-columns: 2fr 1fr;
+}
+
+body {
+  color: #3A4F41;
+}
+
+main {
+  background-color: #EFEFEF;
+}
+
+a {
+  color: #3A4F41;
+}
+
+.intro-wrapper picture {
+  height: 350px;
+  width: 350px;
+  background-color: #0A369D;
+}
